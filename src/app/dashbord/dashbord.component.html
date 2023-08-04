@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <table  class="table">
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>email</td>
+                    <td>action</td>
+                </tr>
+                <tr *ngFor="let user of users">
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.email}}</td>
+                    <td>
+                        <!-- <button class="btn btn-primary"  (click)="editUser(user.id)">edit</button> -->
+                        <button class="btn btn-primary" (click)="viewUser(user.id)">view</button>
+                        <!-- <button class="btn btn-danger" (click)="deletuser()">delet</button> -->
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
